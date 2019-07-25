@@ -3,8 +3,24 @@ package pojo;
 import java.io.Serializable;
 
 public class User implements Serializable {
+
     private String name;
     private String password;
+    private String age;
+
+    public User(String name, String password, String age) {
+        this.name = name;
+        this.password = password;
+        this.age = age;
+    }
+
+    public String getAge() {
+        return age;
+    }
+
+    public void setAge(String age) {
+        this.age = age;
+    }
 
     public String getName() {
         return name;
