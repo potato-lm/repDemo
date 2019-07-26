@@ -7,6 +7,15 @@ public class User implements Serializable {
     private String name;
     private String password;
     private String age;
+    private String address;
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
 
     public User(String name, String password, String age) {
         this.name = name;
